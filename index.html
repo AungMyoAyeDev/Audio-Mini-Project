@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Audio mini project</title>
+        <link rel="stylesheet" href="style.css" />
+        <script
+            src="https://kit.fontawesome.com/d3805b5f4e.js"
+            crossorigin="anonymous"
+        ></script>
+    </head>
+    <body>
+        <main>
+            <div class="container">
+                <header>
+                    <a href="#"><i class="fa-solid fa-angle-left"></i></a>
+                    <h1>Music</h1>
+                    <a href="#"><i class="fa-solid fa-bars"></i></a>
+                </header>
+                <content> </content>
+                <nav>
+                    <img  id="img" />
+                    <div class="info">
+                        <div id="duration">00:00/00:00</div>
+                        <input type="range" id="progress" value="0" max="100" />
+                        <div class="btn-gp">
+                            <button id="previous">
+                                <i class="fa-solid fa-backward"></i>
+                            </button>
+                            <button id="pause">
+                                <i class="fa-solid fa-pause"></i>
+                            </button>
+                            <button id="play">
+                                <i class="fa-solid fa-play"></i>
+                            </button>
+                            <button id="next">
+                                <i class="fa-solid fa-forward"></i>
+                            </button>
+                        </div>
+                    </div>
+                </nav>
+                <audio id="audio-elem"></audio>
+            </div>
+        </main>
+        <script type="module" src="script/script.js"></script>
+    </body>
+</html>
